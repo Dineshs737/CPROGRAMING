@@ -1,6 +1,19 @@
 #include <iostream>
+#include "stack.h"
 
-int main(int argc, char *argv[])
+using namespace std;
+
+int main()
 {
-    std::cout << "Hello world!" << std::endl;
+    stack s1;
+    s1.push(1);
+    s1.push(2);
+    s1.push(3);
+
+    cout<<s1.pop()<<endl;
+    cout<<s1.pop()<<endl;
+    cout<<s1.pop()<<endl;
+
+    
+    
 }
