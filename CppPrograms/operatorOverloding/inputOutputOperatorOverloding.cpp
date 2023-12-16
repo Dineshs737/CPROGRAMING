@@ -10,12 +10,14 @@ class Room{
 
     public :
 
-operator >>(istream &input,Room &r){
+friend istream&operator >>(istream &input,Room &r){
 
 cout<<"Enter Lenght :";
 input>>r.lenght;
 cout<<"Enter Breadht :";
 input>>r.breadht;
+
+return input;
 
 
 
