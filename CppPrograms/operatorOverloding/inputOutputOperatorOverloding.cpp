@@ -31,9 +31,11 @@ return input;
 ostream &operator <<(ostream &output,Room &r){
 
     output<<"Lenght is :"<<r.lenght<<"    "<<"Breadht is :"<<r.breadht<<endl;
+    return output;
 }
 int main(){
 
     Room r1;
     cin>>r1;/****************operator(cin,r1)*************/
+    cout<<r1;
 }
