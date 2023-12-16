@@ -10,7 +10,12 @@ class Room{
 
     public :
 
-friend istream&operator >>(istream &input,Room &r){
+friend istream &operator >>(istream &input,Room &r);
+
+
+};
+/**************************function ***************************/
+istream &operator >>(istream &input,Room &r){
 
 cout<<"Enter Lenght :";
 input>>r.lenght;
@@ -18,13 +23,7 @@ cout<<"Enter Breadht :";
 input>>r.breadht;
 
 return input;
-
-
-
 }
-
-
-};
 
 int main(){
 
