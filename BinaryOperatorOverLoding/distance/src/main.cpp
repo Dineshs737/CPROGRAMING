@@ -7,5 +7,6 @@ int main()
 {
     Distance d1;
     cin>> d1;
+    cout<<d1;
     
 }
