@@ -9,4 +9,8 @@ std::istream &operator >>(std::istream &input,Distance &d){
    return input;
 
 }
+std::ostream &operator <<(std::ostream &out,Distance &d){
+    out<<"Your feet is :"<<d.feet<<"    "<<"Your inches is :"<<d.inches<<std::endl;
+    return out;
+}
 
