@@ -11,10 +11,12 @@ class Room{
     public :
 
 friend istream &operator >>(istream &input,Room &r);
+friend ostream &operator <<(ostream &output,Room &r);
+
 
 
 };
-/**************************function ***************************/
+/**************************input overloding function ***************************/
 istream &operator >>(istream &input,Room &r){
 
 cout<<"Enter Lenght :";
@@ -24,7 +26,12 @@ input>>r.breadht;
 
 return input;
 }
+/****************************output overloding function ******************************/
 
+ostream &operator <<(ostream &output,Room &r){
+
+    output<<"Lenght is :"<<r.lenght<<"    "<<"Breadht is :"<<r.breadht<<endl;
+}
 int main(){
 
     Room r1;
