@@ -1,6 +1,11 @@
 #include <iostream>
+#include "Distance.h"
 
-int main(int argc, char *argv[])
+using namespace std;
+
+int main()
 {
-    std::cout << "Hello world!" << std::endl;
+    Distance d1;
+    cin>> d1;
+    
 }
