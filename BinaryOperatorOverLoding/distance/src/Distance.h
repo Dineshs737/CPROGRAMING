@@ -27,5 +27,13 @@ Distance operator +(Distance d){
     return temp;
 }
 
+bool operator >(Distance d){
+
+    if(this->feet >d.feet){
+
+        return true;
+    }
+}
+
 
 };
