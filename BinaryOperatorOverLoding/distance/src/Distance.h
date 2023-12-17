@@ -33,6 +33,9 @@ bool operator >(Distance d){
 
         return true;
     }
+    else{
+        return false;
+    }
 }
 
 
