@@ -12,5 +12,20 @@ public:
 friend std::istream &operator >>(std::istream &input,Distance &d);
 friend std::ostream &operator <<(std::ostream &out,Distance &d);
 
+Distance operator +(Distance d){
+    Distance temp;
+
+    temp.feet =this->feet+d.feet;
+    if(this->inches+d.inches >11){
+        temp.feet ++;
+        temp.inches=this->inches+d.inches -12;
+
+    }
+    else{
+        temp.inches =this->inches+d.inches;
+    }
+    return temp;
+}
+
 
 };
